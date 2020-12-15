@@ -10,6 +10,9 @@ class Song
   def initialize(name, artist, genre)
     @name = name
     @artist = artist
+
+    artist << @@artists unless @@artists.include?(artist)
+
     @genre = genre
   end
 end
