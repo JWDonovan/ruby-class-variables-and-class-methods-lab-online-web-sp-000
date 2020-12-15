@@ -14,5 +14,7 @@ class Song
     artist << @@artists unless @@artists.include?(artist)
 
     @genre = genre
+
+    genre << @@genre unless @@genre.include?(genre)
   end
 end
