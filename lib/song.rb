@@ -16,5 +16,11 @@ class Song
     @genre = genre
 
     genre << @@genre unless @@genre.include?(genre)
+
+    @@count += 1
+  end
+
+  def count
+    
   end
 end
